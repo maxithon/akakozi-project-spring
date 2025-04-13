@@ -4,11 +4,9 @@ import com.abakozi.cruddemo.dao.DepartmentRepository;
 import com.abakozi.cruddemo.entity.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
     private DepartmentRepository departmentRepository;
@@ -24,7 +22,6 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Department save(Department theDepartment) {
         return departmentRepository.save(theDepartment);
     }
-
 @Override
 public Department findById(UUID theId) {
     Optional<Department> result = departmentRepository.findById(theId);
