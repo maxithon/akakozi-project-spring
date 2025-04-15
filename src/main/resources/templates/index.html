@@ -1,0 +1,13 @@
+<!-- src/main/resources/templates/index.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Index Page</title>
+</head>
+<body>
+<h1>Welcome to My Spring Boot App!</h1>
+<p>This is the home page.</p><br/>
+<!-- Link to the list-employees page -->
+<a th:href="@{/employees/list}">View Employees</a>
+</body>
+</html>

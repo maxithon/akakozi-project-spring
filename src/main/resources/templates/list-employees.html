@@ -12,14 +12,20 @@
 <table class="tale table-bordered table-striped">
   <thead>
   <tr>
-    <th>Name</th>
+    <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Phone</th>
     <th>Department</th>
     <th>Actions</th>
   </tr>
   </thead>
   <tbody>
   <tr th:each="emp : ${employees}">
-   <td th:text="${emp.name}"></td>
+   <td th:text="${emp.firstName}"></td>
+      <td th:text="${emp.lastName}"></td>
+      <td th:text="${emp.email}"></td>
+      <td th:text="${emp.phone}"></td>
     <td th:text="${emp.department.name}"></td>
     <td>
         <a th:href="@{/employees/showFormForUpdate(employeeId=${emp.id})}"
@@ -30,6 +36,12 @@
          class="btn btn-danger btn-sm"
          onclick="return confirm('Are you sure?')">Delete</a>
     </td>
+  </tr>
+  <tr>
+      <td>
+          <!-- Back to Index page-->
+          <a th:href="@{/}">Back to Home</a>
+      </td>
   </tr>
   </tbody>
 </table>

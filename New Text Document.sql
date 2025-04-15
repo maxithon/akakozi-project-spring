@@ -18,3 +18,7 @@ CREATE TABLE d_employee (
     department_id UUID,
     CONSTRAINT fk_department FOREIGN KEY(department_id) REFERENCES d_department(id)
 );
+
+--3.
+create table d_address (id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+street varchar(100)not null,city varchar(50)not null,zip varchar(50)not null); 
