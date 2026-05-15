@@ -1,1 +1,1 @@
-Project yo kwigiraho. izajya yandika abakozi hamwe na department bakoreramo
+Employee Management System built with Spring Boot, PostgreSQL, Thymeleaf, and REST APIs.
